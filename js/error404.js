@@ -1,0 +1,1 @@
+document.getElementById('errword').innerHTML="<q>"+localStorage.getItem('error404')+"</q>";
