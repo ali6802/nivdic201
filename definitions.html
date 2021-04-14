@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    -->
+    <link type="text/css" rel="stylesheet" href="../css/utility.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/definitions.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIV Definitions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src='./js/definitionsanimation.js' defer></script>
+  </head>
+  <body>    
+    <section class="definitions">
+      <div class="navbar-fixed">
+        <nav class="transparent color-box"">
+          <div class="container">
+            <div class="nav-wrapper definitions-bar">
+              <a href="index.html" class="brand-logo definition-logo hide-on-med-and-down">NIV</a>
+              <a href="index.html" class="home-button definition-logo hide-on-large-only"><i class="material-icons">home</i></a>
+              <div class="nav-search">
+                <input type="text" id="input-from-definition-page" name="name" placeholder="search word here" spellcheck="true">
+                <div id="definition-page-button"><i class="material-icons">search</i></div>
+              </div>              
+            </div>
+          </div>          
+        </nav>
+      </div>
+       <div class="row" id="animation">
+          <div class="col s12 m6 definitions-half">
+             <div class="container">
+                <h2>Definitions</h2>
+                <h3 id="SWord"></h3>
+                <h4 id="SWPronunciation" class="pronunciation"></h4>
+                <h4 id="SWHyphenation" class="hyphenation"></h4>
+                <div class="divider black"></div>
+                <div id="SWDefinitions" class="SWDefinitions">
+                  <!--
+                  <div class="definition-box">
+                    <p class="definition-text">[1] : <i>(Intransitive verb)</i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magnam.</p>
+                    <a href="https://www.asce.org/" class="reference">American Heritage® Dictionary of the English Language</a>
+                  </div>
+                  <div class="definition-box">
+                    <p class="definition-text">[1] : <i>(Intransitive verb)</i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magnam.</p>
+                    <a href="https://www.asce.org/" class="reference">American Heritage® Dictionary of the English Language</a>
+                  </div>
+                  <div class="definition-box">
+                    <p class="definition-text">[1] : <i>(Intransitive verb)</i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magnam.</p>
+                    <a href="https://www.asce.org/" class="reference">American Heritage® Dictionary of the English Language</a>
+                  </div>
+                  -->                                                                   
+                </div>
+             </div>
+          </div>
+          <div class="col s12 m6 definitions-half examples">
+             <div class="container example-container">
+                <h2>Examples</h2>
+                <div class="divider black"></div>
+                <div id="SWExamples" class="SWExamples">
+                   <!--
+                   <div class="example-box">
+                      <p class="example-text">[1]: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, perferendis.</p>
+                      <a href="https://www.asce.org/" class="reference">American Society of Civil Engineering</a>
+                      <h6 class="example-author">John Sudhan (2009)</h6>
+                   </div>
+                   <div class="example-box">
+                     <p class="example-text">[1]: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, perferendis.</p>
+                     <a href="https://www.asce.org/" class="reference">American Society of Civil Engineering</a>
+                     <h6 class="example-author">John Sudhan (2009)</h6>
+                  </div>
+                  -->
+                  <!--
+                  <div class="message-404">
+                    <img src="../img/error404.png" alt="">
+                    <h3>Examples not found !</h3>
+                  </div>
+                  -->
+                </div>
+             </div>
+          </div>          
+       </div>
+    </section>
+    <section class="synonyms">
+      <div class="container">
+         <h2>Synonyms</h2>
+         <ul class="row synonyms-row" id="synonyms-row">
+            <!--
+            <li class="col s6 m4 l2 synonym-box"><a href="">ABCDEFGHIJKL</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym2</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym3</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym4</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym5</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym6</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">ABCDEFGHIJKL</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym2</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym3</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym4</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym5</a></li>
+            <li class="col s6 m4 l2 synonym-box"><a href="">Synonym6</a></li>
+            -->       
+         </ul>
+      </div>          
+    </section>
+    <footer class="page-footer grey darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l9 s12 social-media-links">
+            <ul class="row">
+              <li><a class="col s2 smicon" href="https://facebook.com/nivdictionary"><i class="fab fa-facebook fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://instagram.com/nivdictionary"><i class="fab fa-instagram fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://pinterest.com/nivdictionary"><i class="fab fa-pinterest fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://youtube.com/nivdictionary"><i class="fab fa-youtube fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://tiktok.com/nivdictionary"><i class="fab fa-tiktok fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://linkedin.com/nivdictionary"><i class="fab fa-linkedin fa-4x"></i></a></li>
+            </ul>         
+          </div>
+          <div class="col l3 s12 contact">       
+            <h4>&#169 Alisson Ribeiro Loura</h4>          
+          </div>              
+        </div>
+      </div>       
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script src="../js/definitions_starter.js" type="module"></script>    
+    <script src="https://kit.fontawesome.com/a625e52657.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        
+      });
+    </script>
+  </body>
+</html>

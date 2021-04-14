@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    -->
+    <link type="text/css" rel="stylesheet" href="../css/utility.css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIV Dictionary</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="primary-overlay">
+        <div class="navbar-fixed">
+          <nav class="transparent">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#home" class="brand-logo">NIV</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">                
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>                
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Side nav -->
+        <ul class="side-nav" id="mobile-nav">
+          <h4 class="blue-grey darken-3 center">NIV</h4>
+          <li>
+            <a class="divider"></a>
+          </li>        
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!--Showcase-->
+        <div class="showcase">
+          <div class="container">
+            <div class="main-text">
+              <h2>NIV Dictionary</h2>
+              <h4>Translate the World !</h4>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m10 l8 push-l2 push-m1">
+                <input type="text" id="search-word" name="name" placeholder="search word here" spellcheck="true">              
+                <div id="searchButton"><i class="material-icons">search</i></div>              
+              </div>
+            </div>         
+          </div>      
+        </div>
+      </div>
+    </header>
+  <section class="demo">
+    <div class="row">
+      <div class="col s12 m6 demo-half word-of-the-day">
+        <div class="container">
+          <h2>Word Of The Day</h2>
+          <h3 id="wordOfTheDay"><!--<span>Error 429: Too Many Requests,<br>Retry in a While</span>--></h3>
+          <div class="divider black"></div>
+          <div id="WOTDDefinitions" class="WOTDDefinitions">           
+            <p id="WOTDDefinition" class="demo-definition"></p>
+            <!--
+            <div class="message-404">
+              <img src="../img/error404.png" alt="">
+              <h4>Definition not found !</h4>
+            </div>
+            -->            
+          </div>                    
+          <div class="more-info">
+              <div class="button" id="WOTDbutton"><h4>More Info</h4></div>
+          </div>                       
+        </div>                    
+      </div>
+      <div class="col s12 m6 demo-half random-word">
+        <div class="container">
+          <h2>Random Word</h2>
+          <h3 id="randomWord">[...]<!--<span>Error 429: Too Many Requests,<br>Retry in a While</span>--></h3>
+          <div class="divider black"></div>          
+          <div id="RWDefinitions" class="RWDefinitions">            
+            <!--<p id="RWDefinition" class="demo-definition"></p>-->            
+            <!--
+            <div class="message-404">
+              <img src="../img/error404.png" alt="">
+              <h4>Definition not found !</h4>
+            </div>
+            -->           
+          </div>             
+          <div class="more-info rwbuttons">
+              <div class="button" id="RWbutton"><h4>More Info</h4></div>
+              <div class="button" id="NRWbutton"><h4>New Random Word</h4></div>
+          </div>                       
+        </div>       
+      </div>
+    </div>                        
+    </section>
+    <footer class="page-footer grey darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l9 s12 social-media-links">
+            <ul class="row">
+              <li><a class="col s2 smicon" href="https://facebook.com/nivdictionary"><i class="fab fa-facebook fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://instagram.com/nivdictionary"><i class="fab fa-instagram fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://pinterest.com/nivdictionary"><i class="fab fa-pinterest fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://youtube.com/nivdictionary"><i class="fab fa-youtube fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://tiktok.com/nivdictionary"><i class="fab fa-tiktok fa-4x"></i></a></li>
+              <li><a class="col s2 smicon" href="https://linkedin.com/nivdictionary"><i class="fab fa-linkedin fa-4x"></i></a></li>
+            </ul>         
+          </div>
+          <div class="col l3 s12 contact">       
+            <h4>&#169 Alisson Ribeiro Loura</h4>          
+          </div>              
+        </div>
+      </div>       
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script src="../js/index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/a625e52657.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Init Sidenav
+        $('.button-collapse').sideNav();
+        // Scroll Fire
+        const options = [
+          {
+            selector:'.navbar-fixed', offset:1400, callback: function () {
+              $('nav').removeClass('transparent').addClass('grey darken-2');
+            }
+          }        
+        ];
+        Materialize.scrollFire(options);
+      });
+    </script>
+  </body>
+</html>
