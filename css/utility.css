@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=New+Tegomin&family=Raleway:ital,wght@0,500;0,900;1,700&family=Roboto:wght@500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+}
+html {
+   font-size: 62.5%;
+}
+.main-header * {
+   font-size: 1.8rem;
+}
+:root {
+   --NIVTest:'Dela Gothic One';
+   --NIVDescription:'New Tegomin';
+   --WOTDBackground: #FFFDD0;
+   --RWBackground: #FFF974;
+   --DemoTitle:'Ubuntu';
+   --InfoFont:'Roboto';
+   --HyphenationStress:'Raleway';
+   --ErrorMessage:'Train One';
+   --ErrorBackground: #DCDCDC;
+   --ErrorColor: #800000;
+   --PurpleBackground: #612F74;
+   --WhiteColor:#f4f4f4;
+   --LightGray:#DCDCDC;
+   --DarkGray:#808080;
+}
+/**/
+
+/**/
+.row {
+   margin: 0 !important;
+}
+.col {
+   padding: 0!important;
+}
+/*Buttons*/
+/*More Info Buttons*/
+.more-info {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 4rem;
+   margin-top: 2rem;
+ }
+ .rwbuttons {
+   height: auto;
+ }
+ .rwbuttons .button {
+   height: 4rem !important;
+ }
+ .rwbuttons a {
+   height: 4rem;
+ }
+ #NRWbutton {
+   margin-top: 1rem;
+ }
+ .more-info a > * {
+   margin: 0;     
+ }
+ .button {
+   width:20rem;
+   height:100%;
+   background-color: var(--PurpleBackground);
+   border: 0.1rem solid var(--PurpleBackground);
+   border-radius: 2rem;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   color:var(--WhiteColor);
+   margin:0;     
+ }
+ .button h4 {
+   font-size: 2rem;
+ }
+ .button:hover {   
+   cursor: pointer;  
+ }
+ #NRWButton {
+   margin-top: 1.6rem;
+ }
+/*Footer*/
+.page-footer .container {
+   width: 90%; 
+   padding-bottom: 2rem; 
+ }
+ .smicon {
+   color:var(--WhiteColor);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2rem;
+ }
+ .contact h4 {
+   font-size: 1.6rem;
+   margin-top: 0;
+   text-align: center;
+ }
+ /*404 message*/
+ .message-404,
+ .message-429 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.message-404 img,
+.message-429 img {
+  width: 50%;
+  height: 50%;
+}
+.message-404 h4,
+.message-429 h4 {
+  font-family: var(--DemoTitle,sans-serif);
+  font-size: 2.5rem !important;
+  margin: 0;
+}

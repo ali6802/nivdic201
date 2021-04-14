@@ -1,0 +1,142 @@
+.primary-overlay {
+  background: rgba(63, 57, 77, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main-header {
+  background: url(../img/dictionaryII.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 60rem;
+  color: #fff;
+  position: relative;  
+}
+/**/
+
+/**/
+.main-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-text h2 {
+  font-family: var(--NIVTest, cursive);
+  font-size: 8rem;
+  margin-top: 4rem;
+}
+.main-text h4 {
+  font-family: var(--NIVDescription, serif);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.input-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-field a {
+  margin-left: 1rem;
+  color: #f4f4f4;  
+}
+.input-field a i {
+  font-size: 2.2rem;
+}
+.input-field input {
+  font-size: 1.8rem !important;
+  width: 50%; 
+}
+#searchButton {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 1.2rem;
+  color: var(--PurpleBackground);
+  background-color: var(--WhiteColor);
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+#searchButton:hover {
+  cursor: pointer;
+}
+/**/
+/*Pronunciation and hyphenation*/
+.pronunciation {
+  font-weight: 400;   
+}
+.hyphenation {
+  margin-bottom: 0.8rem;     
+}
+.hyphenation span {
+  font-family: var(--HyphenationStress,sans-serif) !important;
+}
+.secondaryStress {
+  font-style: italic;
+  font-weight: 700;
+}
+.stress {
+  font-weight: 900;
+}
+/*Word of the day and Random Word*/
+.word-of-the-day {
+  background-color: var(--WOTDBackground);
+}
+.random-word {
+  background-color: var(--RWBackground);
+}
+.demo-definition {
+  margin-top: 1.6rem;  
+  font-size: 1.8rem;
+  font-family:var(--InfoFont,sans-serif);  
+}
+.demo-half .container {
+  width: 80%;
+  margin-top: 8rem;     
+}
+.demo-half {
+  height: 100vh;
+}
+.demo-half h2,
+.demo-half h3,
+.demo-half h4 {
+  font-family: var(--DemoTitle,sans-serif);
+}
+.demo-half h2 {
+  font-weight: 700;
+}
+#randomWord,
+#wordOfTheDay {
+  font-size: 2.5rem;  
+}
+#randomWord span,
+#wordOfTheDay span {
+  color:#7f0000;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+
+/**/
+@media(max-width:99.2rem){
+  .main-text h2 {
+    font-size: 4rem;
+  }
+  .main-text h4 {
+    font-size: 3rem;
+  }
+}
+@media(max-width:60rem){
+  .main-text h2 {
+    font-size: 3rem;
+  }
+  .main-text h4 {
+    font-size: 2rem;
+  }
+}

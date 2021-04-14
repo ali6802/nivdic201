@@ -1,0 +1,42 @@
+.errpage {
+    height: 100vh;
+    background-color: var(--ErrorBackground);
+    overflow: hidden;  
+}
+.errpage .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;    
+}
+#imgerr {
+    width: 30rem;
+    height: 30rem;
+}
+#errmessage {
+    font-family: var(--ErrorMessage,cursive);
+    font-size: 3rem;    
+}
+#errword {
+    font-family: var(--InfoFont,sans-serif);
+    color: var(--ErrorColor);
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.more-info a {
+    font-size: 1.8rem;
+}
+@media(max-width:60rem) {
+    #imgerr {
+        width: 20rem;
+        height: 20rem;
+    }
+    #errmessage {
+        font-size: 2.5rem;
+    }
+    #errword {
+        font-size: 2rem;
+    }    
+}
